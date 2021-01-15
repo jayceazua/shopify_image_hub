@@ -5,3 +5,8 @@
 - Postgres
 - Django
 - Python
+
+## Interviewer's Admin Access Panel
+- Url: 
+- Username: shopify
+- Password: @Thor0117
