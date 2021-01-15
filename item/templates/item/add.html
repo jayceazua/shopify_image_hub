@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if error %}
+{{ error }}
+<br />
+<br />
+{% endif %}
+
+<h1>Add Image</h1>
+
+<form method="POST" action="{% url 'add' %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  Caption:
+  <br />
+  <input type="text" name="caption" />
+  <br />
+  Icon:
+  <br />
+  <input type="file" name="icon" />
+  <br />
+  Image:
+  <br />
+  <input type="file" name="image" />
+  <br />
+  <input class="btn btn-primary" type="submit" value="Add Item" />
+</form>
+
+{% endblock %}

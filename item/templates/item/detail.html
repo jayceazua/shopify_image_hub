@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-2">
+    <!-- <img src="{{ item.icon.url }}" class="img-fluid" /> -->
+  </div>
+  <div class="col-10">
+    <a href="{{ item.url }}">
+      <h1>{{ item.caption }}</h1>
+    </a>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-8">
+    <img src="{{ item.image.url }}" class="img-fluid" />
+  </div>
+
+  
+
+</div>
+
+<div class="row pt-2">
+  <div class="col-4 text">
+    <!-- <h4><span class="oi oi-dollar"></span> {{ item.price }}</h4> -->
+  </div>
+  <div class="col-4 text-right">
+    <!-- <h4><span class="oi oi-dollar"></span> {{ item.price }}</h4> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-8">
+    <p>{{ item.description }}</p>
+  </div>
+</div>
+
+
+{% endblock %}
