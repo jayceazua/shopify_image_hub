@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Item(models.Model):
-    caption = models.CharField(max_length=255)
+    caption = models.CharField(max_length=140)
     image = models.ImageField(upload_to='images/')
     icon = models.ImageField(upload_to='images/')
     artist = models.ForeignKey(User, on_delete=models.CASCADE)

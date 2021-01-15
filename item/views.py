@@ -12,18 +12,19 @@ def home(request):
 @login_required(login_url="/accounts/signup")
 def add(request):
     if request.method == 'POST':
-        if request.POST['name'] and request.FILES['icon'] and request.FILES['image']:
+        if request.POST['caption'] and request.FILES['icon'] and request.FILES['image']:
 
             item = Item()
-            item.caption = request.POST['name']
-            
+            item.caption = request.POST['caption']
+
             item.icon = request.FILES['icon']
             item.image = request.FILES['image']
-            
+
             item.artist = request.user
             item.save()
+
             return redirect('/item/' + str(item.id))
-            
+
         else:
             return render(request, 'item/add.html', {'error': 'All fields are required.'})
     else:
@@ -33,4 +34,3 @@ def add(request):
 def detail(request, item_id):
     item = get_object_or_404(Item, pk=item_id)
     return render(request, 'item/detail.html', {'item': item})
-
