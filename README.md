@@ -1,6 +1,7 @@
 # Shopify Image Hub
 Shopify Challenge Backend Internship 2021
-
+[![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
+[![GitHub Release](https://img.shields.io/github/release/tterb/PlayMusic.svg?style=flat)]() 
 
 ## How to Use App
 1. Please follow the link: [Live Link here](https://shopify-image-hub-2021.herokuapp.com/)
@@ -9,9 +10,10 @@ Shopify Challenge Backend Internship 2021
 
 ## Setup App Locally
 ### Local Machine Requirements
-1. 
-2. 
-3. 
+Please have Python version 3 or greater installed in your local machine. 
+1. Clone the repo 
+2. `pip3 install`
+3. `python3 manage.py runserver`
 
 ## Current Features
 
