@@ -51,12 +51,23 @@
     </nav>
   </header>
 
-  <div class="container">
+  <main role="main">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Shopify Image Hub</h1>
+      <p class="lead text-muted">Image Hub is a place where you can either search for great images or share with everyone else</p>
 
+      <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search">
+      </div>
+      
+    </div>
+  </section>
     {% block content %}
     {% endblock %}
 
-  </div>
+  </main>
 
   <footer class="text-muted">
     <div class="container text-center">
