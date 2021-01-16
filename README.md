@@ -1,6 +1,7 @@
 # Shopify Image Hub
 Shopify Challenge Backend Internship 2021
 
+
 ## How to Use App
 1. Please follow the link: [Live Link here](https://shopify-image-hub-2021.herokuapp.com/)
 2. Create an account
