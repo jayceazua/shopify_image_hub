@@ -1,4 +1,4 @@
-# shopify_image_hub
+# Shopify Image Hub
 
 ## How to use app
 https://shopify-image-hub-2021.herokuapp.com/
@@ -8,3 +8,5 @@ https://shopify-image-hub-2021.herokuapp.com/
 - Django
 - Python
 - Jinja Templating Engine
+
+
