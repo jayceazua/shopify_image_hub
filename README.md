@@ -7,14 +7,16 @@ Shopify Challenge Backend Internship 2021
 ## How to Use App
 1. Please follow the link: [Live Link here](https://shopify-image-hub-2021.herokuapp.com/)
 2. Create an account
-3. Post your favorite images
+3. Post favori file andte images
 
 ## Setup App Locally
 ### Local Machine Requirements
-Please have Python version 3 or greater installed in your local machine. 
+Please have Python version 3 or greater installed in local  file andmachine. 
 1. Clone the repo 
 2. `pip3 install`
-3. `python3 manage.py runserver`
+3. Add `.env` file and variables for your database
+4. `python3 manage.py runserver`
+5. Visit `http://127.0.0.1:8000/`
 
 ## Current Features
 
