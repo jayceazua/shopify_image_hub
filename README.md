@@ -2,7 +2,7 @@
 Shopify Challenge Backend Internship 2021
 <br/>
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-
+[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)]()
 
 ## How to Use App
 1. Please follow the link: [Live Link here](https://shopify-image-hub-2021.herokuapp.com/)
