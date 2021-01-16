@@ -2,16 +2,27 @@
 
 {% block content %}
 
-{% for item in items.all %}
-<div class="row pt-3">
-  <div class="col-2" onclick="window.location='{% url 'detail' item.id %}';" style="cursor: pointer;">
-    <img src="{{ item.icon.url }}" class="img-fluid" />
+<div class="container">
+  <div class="row">
+
+    {% for item in items.all %}
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+            <img src="{{ item.icon.url }}" class="card-img-top" style="height: 225px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">{{ item.caption }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button onclick="window.location='{% url 'detail' item.id %}';" style="cursor: pointer;" type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              </div>
+              <small class="text-muted">By: {{ item.artist }}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
   </div>
-  <div class="col-6" onclick="window.location='{% url 'detail' item.id %}';" style="cursor: pointer;">
-    <h2>{{ item.caption }}</h2>
-  </div>
-  
 </div>
-{% endfor %}
 
 {% endblock %}

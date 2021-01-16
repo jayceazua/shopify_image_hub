@@ -8,7 +8,7 @@ def home(request):
     items = Item.objects
     return render(request, 'item/home.html', {'items': items})
 
-
+# CREATE
 @login_required(login_url="/accounts/signup")
 def add(request):
     if request.method == 'POST':
@@ -16,11 +16,10 @@ def add(request):
 
             item = Item()
             item.caption = request.POST['caption']
-
             item.icon = request.FILES['icon']
             item.image = request.FILES['image']
-
             item.artist = request.user
+
             item.save()
 
             return redirect('/item/' + str(item.id))
@@ -30,26 +29,22 @@ def add(request):
     else:
         return render(request, 'item/add.html')
 
-
+# READ
 def detail(request, item_id):
     item = get_object_or_404(Item, pk=item_id)
     return render(request, 'item/detail.html', {'item': item})
 
-# delete view for details
+# UPDATE
+@login_required(login_url="/accounts/signup")
+def update(request, item_id):
+    pass
 
-
+# DELETE
+@login_required(login_url="/accounts/signup")
 def delete(request, item_id):
-    # dictionary for initial data with
-    # field names as keys
-    context = {}
-
     # fetch the object related to passed id
     item = get_object_or_404(Item, pk=item_id)
-
     if request.method == "POST":
         # delete object
         item.delete()
-        # after deleting redirect to
-        # home page
-    response = redirect('/')
-    return response
+    return redirect('/')
