@@ -1,12 +1,10 @@
 # shopify_image_hub
 
+## How to use app
+https://shopify-image-hub-2021.herokuapp.com/
 
 ## Tech Stack
 - Postgres
 - Django
 - Python
-
-## Interviewer's Admin Access Panel
-- Url: 
-- Username: shopify
-- Password: @Thor0117
+- Jinja Templating Engine
