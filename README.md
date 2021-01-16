@@ -17,7 +17,7 @@ Shopify Challenge Backend Internship 2021
 
 ## Setup App Locally
 ### Local Machine Requirements
-Python version 3 or greater installed in local  file andmachine. 
+Python version 3 or greater installed on your local machine. 
 1. Clone the repo 
 2. `pip3 install`
 3. Add `.env` file and variables for your database
