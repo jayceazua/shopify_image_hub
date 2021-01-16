@@ -23,7 +23,15 @@
 </div>
 
 <div class="row">
-  <div class="col-8"></div>
+  <div class="col-8">
+           <!-- Create a Form -->
+    <form method="POST" action="{% url 'delete' item.id %}"> 
+        <!-- Security token by Django -->
+        {% csrf_token %} 
+        <input class="btn btn-danger" type="submit" value="Delete" /> 
+    </form>
+
+  </div>
 </div>
 
 

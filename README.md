@@ -8,5 +8,3 @@ https://shopify-image-hub-2021.herokuapp.com/
 - Django
 - Python
 - Jinja Templating Engine
-
-
