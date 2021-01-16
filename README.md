@@ -13,5 +13,5 @@ https://shopify-image-hub-2021.herokuapp.com/
 - Jinja Templating Engine
 
 
-## Enity Relation Diagram
-![Enity Relation Diagram](erd.png)
+## Entity Relation Diagram
+![Entity Relation Diagram](erd.png)
