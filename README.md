@@ -15,3 +15,12 @@ Shopify Challenge Backend Internship 2021
 
 ## Entity Relation Diagram
 ![Entity Relation Diagram](erd.png)
+
+| Features                                   | ☑ Done ️   |
+| ------------------------------------------ | :------:  |
+| A user can create an account               |     ☑     |
+| A user can login into their account        |     ☑     |
+| A user can logout of their account         |     ☑     |
+| Only a user can add images to the repo     |     ☑     |
+| Users can only delete their images         |     ☑     |
+
