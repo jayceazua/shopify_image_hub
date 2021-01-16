@@ -7,14 +7,13 @@ Shopify Challenge Backend Internship 2021
 2. Create an account
 3. Post your favorite images
 
-## Tech Stack
-- PostgreSQL
-- Django
-- Python
-- Jinja Templating Engine
+## Setup App Locally
+### Local Machine Requirements
+1. 
+2. 
+3. 
 
-## Entity Relation Diagram
-![Entity Relation Diagram](erd.png)
+## Current Features
 
 | Features                                   | ☑ Done ️   |
 | ------------------------------------------ | :------:  |
@@ -23,4 +22,14 @@ Shopify Challenge Backend Internship 2021
 | A user can logout of their account         |     ☑     |
 | Only a user can add images to the repo     |     ☑     |
 | Users can only delete their images         |     ☑     |
+
+
+## Tech Stack
+- PostgreSQL
+- Django
+- Python
+- Jinja Templating Engine
+
+## Entity Relation Diagram
+![Entity Relation Diagram](erd.png)
 
