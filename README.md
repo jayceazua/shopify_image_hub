@@ -26,7 +26,7 @@ Python version 3 or greater installed in local  file andmachine.
 
 ## Current Features
 
-| Features                                   | ☑ Done ️   |
+| Features                                   | Done ️   |
 | ------------------------------------------ | :------:  |
 | A user can create an account               |     ☑     |
 | A user can login into their account        |     ☑     |
