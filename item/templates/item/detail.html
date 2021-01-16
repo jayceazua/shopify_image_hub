@@ -24,7 +24,7 @@
 
 <div class="row">
   <div class="col-8">
-    {% if user.is_authenticated %}
+    {% if user.id == item.artist.id %}
            <!-- Create a Form -->
     <form method="POST" action="{% url 'delete' item.id %}"> 
         <!-- Security token by Django -->
