@@ -5,7 +5,7 @@ Shopify Challenge Backend Internship 2021
 [![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)]()
 
 ## How to Use App
-1. Please follow the link: [Live Link here](https://shopify-image-hub-2021.herokuapp.com/)
+1. Follow the [Live Link here](https://shopify-image-hub-2021.herokuapp.com/)
 2. Create an account
 3. Post favori file andte images
 
