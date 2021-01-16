@@ -12,13 +12,14 @@ def home(request):
 @login_required(login_url="/accounts/signup")
 def add(request):
     if request.method == 'POST':
-        if request.POST['caption'] and request.FILES['icon'] and request.FILES['image']:
+        if request.POST['caption'] and request.FILES['icon'] and request.FILES['image'] and request.POST['description']:
 
             item = Item()
             item.caption = request.POST['caption']
             item.icon = request.FILES['icon']
             item.image = request.FILES['image']
             item.artist = request.user
+            item.description = request.POST['description']
 
             item.save()
 
