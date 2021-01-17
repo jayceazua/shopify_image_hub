@@ -33,6 +33,7 @@ Python version 3 or greater installed on your local machine.
 | A user can logout of their account         |     ☑     |
 | Only a user can add images to the repo     |     ☑     |
 | Users can only delete their images         |     ☑     |
+| Anyone can search for images               |     ☑     |
 
 
 ## Tech Stack
