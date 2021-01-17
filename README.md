@@ -35,6 +35,7 @@ Python version 3 or greater installed on your local machine.
 | Only a user can add images to the repo     |     ☑     |
 | Users can only delete their images         |     ☑     |
 | Anyone can search for images               |     ☑     |
+| Details page has a related images feature  |     ☑     |
 
 
 ## Tech Stack
