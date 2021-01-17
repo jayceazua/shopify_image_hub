@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import Item
 from django.utils import timezone
+from django.db.models import Q
 
 
 def home(request):
@@ -49,3 +50,10 @@ def delete(request, item_id):
         # delete object
         item.delete()
     return redirect('/')
+
+# SEARCH
+def search(request):
+    template_name = 'item/home.html'
+    query = request.GET.get('q')
+    results = Item.objects.filter(Q(caption__icontains=query) | Q(description__icontains=query))
+    return render(request, template_name, {'items': results})

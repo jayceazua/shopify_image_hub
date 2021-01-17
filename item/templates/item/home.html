@@ -6,17 +6,23 @@
       <h1 class="jumbotron-heading">Shopify Image Hub</h1>
       <p class="lead text-muted">Image Hub is a place where you can either search for great images or share with everyone</p>
 
-      <div class="form-group has-search">
+
+      <div class="form-group has-search"></div>
+        <form action="{% url 'search' %}" method="GET">
           <span class="fa fa-search form-control-feedback"></span>
-          <input type="text" class="form-control" placeholder="Search feature coming soon">
+          <input name="q" class="form-control" type="text" value="{{ request.GET.q}}" placeholder="Search...">
+        </form>
       </div>
+
 
     </div>
   </section>
+
   <div class="container">
     <div class="row">
 
       {% for item in items.all %}
+
         <div class="col-md-4">
           <div class="card mb-4 box-shadow">
               <img src="{{ item.icon.url }}" class="card-img-top" style="height: 225px; width: 100%; display: block;">
@@ -39,11 +45,13 @@
             </div>
           </div>
         </div>
+
       {% endfor %}
 
     </div>
   </div>
-</div>
+
+
 
 
 {% endblock %}
