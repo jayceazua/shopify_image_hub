@@ -34,7 +34,15 @@ def add(request):
 # READ
 def detail(request, item_id):
     item = get_object_or_404(Item, pk=item_id)
-    return render(request, 'item/detail.html', {'item': item})
+    # query
+    results = []
+    queries = item.caption.split(" ")
+    for query in queries:
+        itms = Item.objects.filter(Q(caption__icontains=query) | Q(description__icontains=query))
+        results = results + [itms]
+    results = [itm for result in results for itm in result if itm.icon.url != item.icon.url]
+
+    return render(request, 'item/detail.html', {'item': item, 'items': results})
 
 # UPDATE
 @login_required(login_url="/accounts/signup")

@@ -30,30 +30,14 @@
   <!-- Related Row --> 
   <h3 class="my-4">Similar Inspirations</h3>
   <div class="row">
-
+    {% for result in items %}
     <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
+      <a href="{% url 'detail' result.id %}">
+        <img class="img-fluid" src="{{result.icon.url}}" alt="" style="height: 150px; width: 100%; display: block;">
+      </a>
+        
     </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-    </div>
+    {% endfor %}
   </div>
   <!-- /.row -->
 </div>

@@ -32,7 +32,6 @@
                 <div class="btn-group">
                   <button onclick="window.location='{% url 'detail' item.id %}';" style="cursor: pointer;" type="button" class="btn btn-sm btn-outline-secondary">View</button>
                 {% if user.id == item.artist.id %}
-                  <!-- Create a Form -->
                   <form method="POST" action="{% url 'delete' item.id %}"> 
                       <!-- Security token by Django -->
                       {% csrf_token %} 
