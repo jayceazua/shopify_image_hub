@@ -28,17 +28,19 @@
   <!-- /.row -->
 
   <!-- Related Row --> 
+  
   <h3 class="my-4">Similar Inspirations</h3>
+  
   <div class="row">
     {% for result in items %}
     <div class="col-md-3 col-sm-6 mb-4">
       <a href="{% url 'detail' result.id %}">
         <img class="img-fluid" src="{{result.icon.url}}" alt="" style="height: 150px; width: 100%; display: block;">
       </a>
-        
     </div>
     {% endfor %}
   </div>
+  
   <!-- /.row -->
 </div>
 <!-- /.container -->

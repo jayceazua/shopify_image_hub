@@ -31,6 +31,22 @@ def add(request):
     else:
         return render(request, 'item/add.html')
 
+
+def filter_results(results, current_item_id):
+    """
+        Handles duplicate results when getting related images
+    """
+    filtered_results = []
+    seen = set()
+    seen.add(current_item_id)
+
+    for result in results:
+        for item in result:
+            if item.id not in seen:
+                filtered_results.append(item)
+                seen.add(item.id)
+    return filtered_results
+
 # READ
 def detail(request, item_id):
     item = get_object_or_404(Item, pk=item_id)
@@ -40,9 +56,9 @@ def detail(request, item_id):
     for query in queries:
         itms = Item.objects.filter(Q(caption__icontains=query) | Q(description__icontains=query))
         results = results + [itms]
-    results = [itm for result in results for itm in result if itm.icon.url != item.icon.url]
 
-    return render(request, 'item/detail.html', {'item': item, 'items': results})
+    items = filter_results(results, item_id)
+    return render(request, 'item/detail.html', {'item': item, 'items': items})
 
 # UPDATE
 @login_required(login_url="/accounts/signup")
