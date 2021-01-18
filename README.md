@@ -43,6 +43,7 @@ Python version 3 or greater installed on your local machine.
 - Django
 - Python
 - Jinja Templating Engine
+- AWS
 
 ## Entity Relation Diagram
 ![Entity Relation Diagram](erd.png)
