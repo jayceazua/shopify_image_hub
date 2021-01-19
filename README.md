@@ -39,12 +39,12 @@ Python version 3 or greater installed on your local machine.
 
 ## Images API
 
-| Methods  | Urls     | Actions  |
-|  :------:  |  :------:  |  :------:  |
-| GET | `/items` | get all Images |
-| GET | `/items/:id` | get Image by `id` |
-| DELETE | `/items/:id/delete` | remove Image by `id` |
-| PATCH | `/items/:id/update` | update Image by `id`|
+| Methods    | Urls                | Actions              | Done |
+|  :------:  |  :------:           |  :------:            | :-----:|
+| GET        | `/items`            | get all Images       | ☑ |
+| GET        | `/items/:id`        | get Image by `id`    | ☑ |
+| DELETE     | `/items/:id/delete` | remove Image by `id` | ☑ |
+| PATCH      | `/items/:id/update` | update Image by `id` |   |
 
 ## Tech Stack
 - PostgreSQL
