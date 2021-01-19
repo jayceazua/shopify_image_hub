@@ -34,6 +34,7 @@ Shopify Challenge Backend Internship 2021
 |  :------:  |  :------:           |  :------:            | :-----:|
 | GET        | `/items`            | get all Images       | ☑ |
 | GET        | `/items/:id`        | get Image by `id`    | ☑ |
+| POST        | `/items/add`        | create an Image     | ☑ |
 | DELETE     | `/items/:id/delete` | remove Image by `id` | ☑ |
 | PATCH      | `/items/:id/update` | update Image by `id` |   |
 
