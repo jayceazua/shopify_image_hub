@@ -16,16 +16,6 @@ Shopify Challenge Backend Internship 2021
 3. Upload and share your favorite images
 4. Search for your favorite images
 
-## Setup App Locally
-### Local Machine Requirements
-Python version 3 or greater installed on your local machine. 
-1. Clone the repo 
-2. `pip install requirements.txt`
-3. Add `.env` file and variables for your database
-- - Please look at the `sample.env` file
-4. In your terminal run `python3 manage.py runserver`
-5. Visit `http://127.0.0.1:8000/`
-
 ## Current Features
 
 | Features                                   | Done ️   |
