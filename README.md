@@ -20,7 +20,7 @@ Shopify Challenge Backend Internship 2021
 ### Local Machine Requirements
 Python version 3 or greater installed on your local machine. 
 1. Clone the repo 
-2. `pip3 install requirements.txt`
+2. `pip install requirements.txt`
 3. Add `.env` file and variables for your database
 - - Please look at the `sample.env` file
 4. In your terminal run `python3 manage.py runserver`
