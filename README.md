@@ -37,6 +37,14 @@ Python version 3 or greater installed on your local machine.
 | Anyone can search for images               |     ☑     |
 | Details page has a related images feature  |     ☑     |
 
+## Images API
+
+| Methods  | Urls     | Actions  |
+| :------: | :------: | :------: |
+|          |          |          |
+|          |          |          |
+|          |          |          |
+|          |          |          |
 
 ## Tech Stack
 - PostgreSQL

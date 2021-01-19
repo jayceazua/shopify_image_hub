@@ -31,6 +31,12 @@ def add(request):
     else:
         return render(request, 'item/add.html')
 
+# UPDATE
+@login_required(login_url="/accounts/signup")
+def update(request, item_id):
+    item = get_object_or_404(Item, pk=item_id)
+    pass
+
 
 def filter_results(results, current_item_id):
     """
@@ -59,11 +65,6 @@ def detail(request, item_id):
 
     items = filter_results(results, item_id)
     return render(request, 'item/detail.html', {'item': item, 'items': items})
-
-# UPDATE
-@login_required(login_url="/accounts/signup")
-def update(request, item_id):
-    pass
 
 # DELETE
 @login_required(login_url="/accounts/signup")
